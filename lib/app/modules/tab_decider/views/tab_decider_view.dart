@@ -1,6 +1,7 @@
 // ignore_for_file: must_be_immutable
 
 import 'package:assets_audio_player/assets_audio_player.dart';
+import 'package:firebase_messaging/firebase_messaging.dart';
 // import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:fluentui_system_icons/fluentui_system_icons.dart';
 import 'package:flutter/material.dart';
@@ -8,13 +9,10 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
 import 'package:rtkita/app/components/dialog.dart';
-import 'package:rtkita/app/modules/chat/controllers/chat_controller.dart';
-import 'package:rtkita/app/modules/chat/views/chat_view.dart';
 import 'package:rtkita/app/modules/epolling/views/epolling_view.dart';
 import 'package:rtkita/app/modules/home/views/home_view.dart';
 import 'package:rtkita/app/modules/peta/views/peta_view.dart';
 import 'package:rtkita/app/modules/profile/views/profile_view.dart';
-import 'package:rtkita/app/providers/chat.dart';
 import 'package:rtkita/app/providers/panic_button.dart';
 import 'package:rtkita/env/color.dart';
 import 'package:rtkita/widgets/dialog.dart';
@@ -25,7 +23,6 @@ import '../controllers/tab_decider_controller.dart';
 class TabDeciderView extends GetView<TabDeciderController> {
   TabDeciderView({Key? key}) : super(key: key);
 
-  ChatController chatController = Get.put(ChatController());
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -35,19 +32,19 @@ class TabDeciderView extends GetView<TabDeciderController> {
         child: GetBuilder<TabDeciderController>(
           init: TabDeciderController(),
           initState: ((state) {
-            // FirebaseMessaging.onMessage.listen((RemoteMessage message) async {
-            //   RemoteNotification? notification = message.notification;
+            FirebaseMessaging.onMessage.listen((RemoteMessage message) async {
+              RemoteNotification? notification = message.notification;
 
-            //   if (notification != null) {
-            //     if (notification.title!.contains('Bahaya:')) {
-            //       final assetsAudioPlayer = AssetsAudioPlayer();
+              if (notification != null) {
+                if (notification.title!.contains('Bahaya:')) {
+                  final assetsAudioPlayer = AssetsAudioPlayer();
 
-            //       assetsAudioPlayer.open(
-            //         Audio("assets/rush.mp3"),
-            //       );
-            //     }
-            //   }
-            // });
+                  assetsAudioPlayer.open(
+                    Audio("assets/rush.mp3"),
+                  );
+                }
+              }
+            });
           }),
           builder: (c) => Stack(
             children: [
@@ -142,13 +139,13 @@ class TabDeciderView extends GetView<TabDeciderController> {
                       onTap: () {
                         GetStorage box = GetStorage();
                         print(box.read('fcm_token'));
-                        // final PanicProvider panic = PanicProvider();
-                        // confirmMessage(context, 'Panic Button!',
-                        //     'Panggilan akan diteruskan ke seluruh pengurus.',
-                        //     () {
-                        //   Get.back();
-                        //   panic.sendPanic(context);
-                        // });
+                        final PanicProvider panic = PanicProvider();
+                        confirmMessage(context, 'Panic Button!',
+                            'Panggilan akan diteruskan ke seluruh pengurus.',
+                            () {
+                          Get.back();
+                          panic.sendPanic(context);
+                        });
                       },
                       child: Container(
                         height: 65,

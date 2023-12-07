@@ -15,6 +15,7 @@ class PanicProvider extends GetConnect {
     try {
       final response = await post('$urlApi/panic-button', {},
           headers: {'Authorization': 'Bearer ' + box.read('token')});
+      print(response.bodyString);
       var data = json.decode(response.bodyString.toString());
       if (data != null) {
         successMessage(context, 'Pengurus akan segera menghubungi anda!');

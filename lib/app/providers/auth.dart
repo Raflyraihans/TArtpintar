@@ -1,6 +1,7 @@
 import 'dart:convert';
 
 // import 'package:firebase_messaging/firebase_messaging.dart';
+import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
@@ -55,12 +56,12 @@ class AuthProvider extends GetConnect {
     if (loginController.telepon.text != '' &&
         loginController.password.text != '') {
       try {
-        // String? fcm_token = await FirebaseMessaging.instance.getToken();
+        String? fcmToken = await FirebaseMessaging.instance.getToken();
         homeController.loadingStatus(true);
         final response = await post('$urlApi/login-warga', {
           'phone_number': phoneNumber ?? loginController.telepon.text,
           'password': password ?? loginController.password.text,
-          // 'fcm_token': fcm_token,
+          'fcm_token': fcmToken,
         });
         var data = json.decode(response.bodyString.toString());
         homeController.loadingStatus(false);
@@ -87,6 +88,7 @@ class AuthProvider extends GetConnect {
       }
       return false;
     }
+    return false;
   }
 
   Future<bool?> getDataDiri(token) async {

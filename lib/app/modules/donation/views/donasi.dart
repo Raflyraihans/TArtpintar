@@ -11,8 +11,6 @@ import 'package:image_picker/image_picker.dart';
 import 'package:rtkita/app/components/dialog.dart';
 import 'package:rtkita/app/data/donation.dart';
 import 'package:rtkita/app/modules/donation/controllers/donation_controller.dart';
-import 'package:rtkita/app/modules/midtrans/views/midtrans_view.dart';
-import 'package:rtkita/app/modules/tagihan/controllers/tagihan_controller.dart';
 import 'package:rtkita/app/providers/donation.dart';
 import 'package:rtkita/app/utils/currency_format.dart';
 import 'package:rtkita/env/color.dart';
@@ -34,8 +32,8 @@ class DonasiView extends GetView {
             Container(
               height: 56,
               decoration: BoxDecoration(
-                  color: Colors.white,
-                  borderRadius: BorderRadius.circular(4),
+                  color: primaryColor,
+                  borderRadius: BorderRadius.circular(0),
                   boxShadow: [
                     BoxShadow(
                         color: Colors.black.withOpacity(0.05),
@@ -58,7 +56,7 @@ class DonasiView extends GetView {
                       'Iuran Warga',
                       style: TextStyle(
                         // ignore: unnecessary_const
-                        color: Color(0xff25446F),
+                        color: Colors.white,
                         fontFamily: 'roboto',
                         fontWeight: FontWeight.w700,
                         fontSize: 20,

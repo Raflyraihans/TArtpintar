@@ -6,8 +6,6 @@ import 'package:get/get.dart';
 import 'package:rtkita/app/data/donation.dart';
 import 'package:rtkita/app/modules/donation/controllers/donation_controller.dart';
 import 'package:rtkita/app/modules/donation/views/donasi.dart';
-import 'package:rtkita/app/modules/midtrans/views/midtrans_view.dart';
-import 'package:rtkita/app/modules/tagihan/controllers/tagihan_controller.dart';
 import 'package:rtkita/app/utils/currency_format.dart';
 import 'package:rtkita/env/color.dart';
 import 'package:rtkita/widgets/button.dart';

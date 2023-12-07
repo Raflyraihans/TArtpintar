@@ -5,9 +5,8 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:rtkita/app/data/donation.dart';
 import 'package:rtkita/app/modules/donation/controllers/donation_controller.dart';
-import 'package:rtkita/app/modules/midtrans/views/midtrans_view.dart';
-import 'package:rtkita/app/modules/tagihan/controllers/tagihan_controller.dart';
 import 'package:rtkita/app/utils/currency_format.dart';
+import 'package:rtkita/env/color.dart';
 import 'package:rtkita/widgets/button.dart';
 import 'package:rtkita/widgets/text.dart';
 
@@ -23,8 +22,8 @@ class DetailDonationView extends GetView {
             Container(
               height: 56,
               decoration: BoxDecoration(
-                  color: Colors.white,
-                  borderRadius: BorderRadius.circular(4),
+                  color: primaryColor,
+                  borderRadius: BorderRadius.circular(0),
                   boxShadow: [
                     BoxShadow(
                         color: Colors.black.withOpacity(0.05),
@@ -44,7 +43,7 @@ class DetailDonationView extends GetView {
                   flex: 2,
                   child: const Center(
                     child: Text(
-                      'Donasi',
+                      'Iuran Warga',
                       style: TextStyle(
                         // ignore: unnecessary_const
                         color: Color(0xff25446F),
@@ -167,19 +166,19 @@ class DetailDonationView extends GetView {
                             const SizedBox(
                               height: 24,
                             ),
-                            GetBuilder<DonationController>(
-                                init: DonationController(),
-                                builder: (c) {
-                                  return PrimaryButton(
-                                      text: 'Donasi',
-                                      onTap: () {
-                                        TagihanController tagihanController =
-                                            Get.put(TagihanController());
-                                        tagihanController.addDonasi(
-                                            c.jumlah.text, donation.id);
-                                        Get.to(() => MidtransView(1));
-                                      });
-                                }),
+                            // GetBuilder<DonationController>(
+                            //     init: DonationController(),
+                            //     builder: (c) {
+                            //       return PrimaryButton(
+                            //           text: 'Donasi',
+                            //           onTap: () {
+                            //             TagihanController tagihanController =
+                            //                 Get.put(TagihanController());
+                            //             tagihanController.addDonasi(
+                            //                 c.jumlah.text, donation.id);
+                            //             Get.to(() => MidtransView(1));
+                            //           });
+                            //     }),
                           ],
                         ),
                       ),

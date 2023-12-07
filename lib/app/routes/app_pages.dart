@@ -6,8 +6,6 @@ import '../modules/aduan/bindings/aduan_binding.dart';
 import '../modules/aduan/views/aduan_view.dart';
 import '../modules/berita/bindings/berita_binding.dart';
 import '../modules/berita/views/berita_view.dart';
-import '../modules/chat/bindings/chat_binding.dart';
-import '../modules/chat/views/chat_view.dart';
 import '../modules/donation/bindings/donation_binding.dart';
 import '../modules/donation/views/detail_donation_view.dart';
 import '../modules/donation/views/donation_view.dart';
@@ -31,8 +29,6 @@ import '../modules/manajemenPengumuman/bindings/manajemen_pengumuman_binding.dar
 import '../modules/manajemenPengumuman/views/manajemen_pengumuman_view.dart';
 import '../modules/manajemenPersuratan/bindings/manajemen_persuratan_binding.dart';
 import '../modules/manajemenPersuratan/views/manajemen_persuratan_view.dart';
-import '../modules/midtrans/bindings/midtrans_binding.dart';
-import '../modules/midtrans/views/midtrans_view.dart';
 import '../modules/pengumuman/bindings/pengumuman_binding.dart';
 import '../modules/pengumuman/views/pengumuman_view.dart';
 import '../modules/persuratan/bindings/persuratan_binding.dart';
@@ -45,14 +41,8 @@ import '../modules/register/bindings/register_binding.dart';
 import '../modules/register/views/register_view.dart';
 import '../modules/splash_screen/bindings/splash_screen_binding.dart';
 import '../modules/splash_screen/views/splash_screen_view.dart';
-import '../modules/statisik/bindings/statisik_binding.dart';
-import '../modules/statisik/views/statisik_view.dart';
 import '../modules/tab_decider/bindings/tab_decider_binding.dart';
 import '../modules/tab_decider/views/tab_decider_view.dart';
-import '../modules/tagihan/bindings/tagihan_binding.dart';
-import '../modules/tagihan/views/tagihan_view.dart';
-import '../modules/umkm/bindings/umkm_binding.dart';
-import '../modules/umkm/views/umkm_view.dart';
 import '../modules/verif_kk/bindings/verif_kk_binding.dart';
 import '../modules/verif_kk/views/verif_kk_view.dart';
 import '../modules/verif_otp/bindings/verif_otp_binding.dart';
@@ -134,11 +124,6 @@ class AppPages {
       binding: AduanBinding(),
     ),
     GetPage(
-      name: _Paths.TAGIHAN,
-      page: () => TagihanView(),
-      binding: TagihanBinding(),
-    ),
-    GetPage(
       name: _Paths.PENGUMUMAN,
       page: () => PengumumanView(),
       binding: PengumumanBinding(),
@@ -149,29 +134,14 @@ class AppPages {
       binding: BeritaBinding(),
     ),
     GetPage(
-      name: _Paths.UMKM,
-      page: () => UmkmView(),
-      binding: UmkmBinding(),
-    ),
-    GetPage(
       name: _Paths.PETA,
       page: () => const PetaView(),
       binding: PetaBinding(),
     ),
     GetPage(
-      name: _Paths.CHAT,
-      page: () => ChatView(),
-      binding: ChatBinding(),
-    ),
-    GetPage(
       name: _Paths.DONATION,
       page: () => DonationView(),
       binding: DonationBinding(),
-    ),
-    GetPage(
-      name: _Paths.STATISIK,
-      page: () => const StatisikView(),
-      binding: StatisikBinding(),
     ),
     GetPage(
       name: _Paths.MANAJEMEN_ADUAN_WARGA,
