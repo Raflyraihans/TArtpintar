@@ -39,7 +39,7 @@ dev_dependencies:
 
 flutter_icons:
   android: launcher_icon
-  image_path: assets/icon.png
+  image_path: assets/icon_rtpintar.png
   ios: true
   min_sdk_android: 21
 

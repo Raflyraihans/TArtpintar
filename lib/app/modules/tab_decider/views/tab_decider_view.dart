@@ -15,8 +15,10 @@ import 'package:rtkita/app/modules/peta/views/peta_view.dart';
 import 'package:rtkita/app/modules/profile/views/profile_view.dart';
 import 'package:rtkita/app/providers/panic_button.dart';
 import 'package:rtkita/env/color.dart';
+import 'package:rtkita/widgets/button.dart';
 import 'package:rtkita/widgets/dialog.dart';
 import 'package:rtkita/widgets/navigation.dart';
+import 'package:rtkita/widgets/text.dart';
 
 import '../controllers/tab_decider_controller.dart';
 
@@ -42,6 +44,32 @@ class TabDeciderView extends GetView<TabDeciderController> {
                   assetsAudioPlayer.open(
                     Audio("assets/rush.mp3"),
                   );
+                  Get.dialog(SimpleBoxDialog(
+                    title: 'Keadaan Darurat',
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        CText(notification.title!, fontWeight: FontWeight.w700,),
+                        const SizedBox(height: 8,),
+                        CText(notification.body!),
+                        Container(
+                          transform: Matrix4.translationValues(0, 30, 0),
+                          child: Row(
+                            children: [
+                              Expanded(
+                                child: PrimaryButton(
+                                  text: 'Konfirmasi',
+                                  onTap: () {
+                                    Get.back();
+                                  },
+                                ),
+                              )
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
+                  ));
                 }
               }
             });
@@ -140,6 +168,7 @@ class TabDeciderView extends GetView<TabDeciderController> {
                         GetStorage box = GetStorage();
                         print(box.read('fcm_token'));
                         final PanicProvider panic = PanicProvider();
+
                         confirmMessage(context, 'Panic Button!',
                             'Panggilan akan diteruskan ke seluruh pengurus.',
                             () {

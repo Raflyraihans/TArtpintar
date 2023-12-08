@@ -140,7 +140,8 @@ class DetailView extends GetView {
                                 CText('Iuran per warga: '),
                                 CText(
                                   CurrencyFormat.convertToIdr(
-                                      int.parse(donation.donationAmount!), 0),
+                                      int.parse(donation.donationAmount!.replaceAll('Rp. ', '')
+                                                      .replaceAll('.', '')), 0),
                                   fontSize: 18,
                                   fontWeight: FontWeight.bold,
                                 ),
