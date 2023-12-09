@@ -21,7 +21,7 @@ class PanicProvider extends GetConnect {
         successMessage(context, 'Pengurus akan segera menghubungi anda!');
       }
     } catch (e) {
-      errorMessage(e);
+      errorMessage("Terjadi kesalahan ketika mengirim panic button");
     }
   }
 
@@ -43,7 +43,7 @@ class PanicProvider extends GetConnect {
         }
       }
     } catch (e) {
-      errorMessage(e);
+      errorMessage("Terjadi kesalahan dalam memuat data panic button");
     }
   }
 }

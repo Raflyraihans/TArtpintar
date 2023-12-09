@@ -31,7 +31,7 @@ class AnnouncementProvider extends GetConnect {
         }
       }
     } catch (e) {
-      errorMessage(e);
+      errorMessage("Terjadi kesalahan dalam memuat pengumuman");
     }
   }
 
@@ -60,7 +60,7 @@ class AnnouncementProvider extends GetConnect {
       }
     } catch (e) {
       homeController.loadingStatus(false);
-      errorMessage(e);
+      errorMessage("Terjadi kesalahan dalam mengirim pengumuman");
     }
   }
 }

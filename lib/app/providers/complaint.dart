@@ -33,7 +33,7 @@ class AduanProvider extends GetConnect {
       }
       homeController.loadingStatus(false);
     } catch (e) {
-      errorMessage(e);
+      errorMessage("Terjadi kesalahan dalam memuat aduan");
     }
   }
 
@@ -53,7 +53,7 @@ class AduanProvider extends GetConnect {
       }
       homeController.loadingStatus(false);
     } catch (e) {
-      errorMessage(e);
+      errorMessage("Terjadi kesalahan dalam memuat aduan");
     }
   }
 
@@ -69,7 +69,7 @@ class AduanProvider extends GetConnect {
       homeController.loadingStatus(false);
       getListComplaintPengurus();
     } catch (e) {
-      errorMessage(e);
+      errorMessage("Terjadi kesalahan dalam memuat aduan");
     }
   }
 
@@ -84,7 +84,7 @@ class AduanProvider extends GetConnect {
         data['complaint'].forEach((v) => complaint.add(Complaint.fromJson(v)));
       }
     } catch (e) {
-      errorMessage(e);
+      errorMessage("Terjadi kesalahan dalam memuat aduan");
     }
     return complaint;
   }

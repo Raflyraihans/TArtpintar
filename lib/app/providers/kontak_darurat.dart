@@ -30,7 +30,7 @@ class KontakProvider extends GetConnect {
         kontakController.setKontak(kontak);
       }
     } catch (e) {
-      errorMessage(e);
+      errorMessage("Terjadi kesalahan dalam memuat nomor penting");
     }
   }
 }

@@ -84,7 +84,7 @@ class AuthProvider extends GetConnect {
         homeController.loadingStatus(false);
         return false;
       } catch (e) {
-        errorMessage(e);
+        errorMessage("Terjadi kesalahan pada login");
       }
       return false;
     }
@@ -112,7 +112,7 @@ class AuthProvider extends GetConnect {
       homeController.loadingStatus(false);
       return false;
     } catch (e) {
-      errorMessage(e);
+      errorMessage("Terjadi kesalahan");
     }
     return false;
   }
@@ -138,7 +138,7 @@ class AuthProvider extends GetConnect {
       }
     } catch (e) {
       homeController.loadingStatus(false);
-      errorMessage(e);
+      errorMessage("Terjadi kesalahan");
     }
   }
 

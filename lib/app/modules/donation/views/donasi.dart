@@ -105,7 +105,7 @@ class DonasiView extends GetView {
                                                       errorMessage(
                                                           'Platform Error');
                                                     } catch (e) {
-                                                      errorMessage(e);
+                                                      errorMessage("Terjadi kesalahan dalam mengambil gambar");
                                                     }
                                                     Get.back();
                                                   },
@@ -132,7 +132,7 @@ class DonasiView extends GetView {
                                                       errorMessage(
                                                           'Platform Error');
                                                     } catch (e) {
-                                                      errorMessage(e);
+                                                      errorMessage("Terjadi kesalahan dalam memilih gambar");
                                                     }
                                                     Get.back();
                                                   },

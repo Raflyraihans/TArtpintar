@@ -37,7 +37,7 @@ class PersuratanProvider extends GetConnect {
         }
       }
     } catch (e) {
-      errorMessage(e);
+      errorMessage("Terjadi kesalahan dalam memuat persuratan");
     }
     return coverLetter;
   }
@@ -109,7 +109,7 @@ class PersuratanProvider extends GetConnect {
         errorMessage(data['message']);
       }
     } catch (e) {
-      errorMessage(e);
+      errorMessage("Terjadi kesalahan dalam memuat data keluarga");
       homeController.loadingStatus(false);
     }
   }
@@ -138,7 +138,7 @@ class PersuratanProvider extends GetConnect {
       homeController.loadingStatus(false);
     } catch (e) {
       homeController.loadingStatus(false);
-      errorMessage(e);
+      errorMessage("Terjadi kesalahan ketika mengirim persuratan");
     }
   }
 }

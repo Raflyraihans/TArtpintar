@@ -33,7 +33,7 @@ class PollingProvider extends GetConnect {
       }
     } catch (e) {
       homeController.loadingStatus(false);
-      errorMessage(e);
+      errorMessage("Terjadi kesalahan dalam memuat polling");
     }
   }
 
@@ -58,7 +58,7 @@ class PollingProvider extends GetConnect {
       }
       getDetailPolling(pollingId.toString());
     } catch (e) {
-      errorMessage(e);
+      errorMessage("Terjadi kesalahan dalam memuat polling");
     }
     homeController.loadingStatus(false);
   }
@@ -89,7 +89,7 @@ class PollingProvider extends GetConnect {
         }
       }
     } catch (e) {
-      errorMessage(e);
+      errorMessage("Terjadi kesalahan dalam memuat polling");
     }
     homeController.loadingStatus(false);
   }

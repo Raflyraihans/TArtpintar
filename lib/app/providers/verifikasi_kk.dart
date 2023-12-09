@@ -36,7 +36,7 @@ class VerifKKProvider extends GetConnect {
       }
     } catch (e) {
       homeController.loadingStatus(false);
-      errorMessage(e);
+      errorMessage("Terjadi kesalahan dalam memverifikasi KK anda");
     }
   }
 }

@@ -35,7 +35,7 @@ class DonationProvider extends GetConnect {
       }
       homeController.loadingStatus(false);
     } catch (e) {
-      errorMessage(e);
+      errorMessage("Terjadi kesalahan dalam memuat donasi");
     }
   }
 
@@ -59,7 +59,7 @@ class DonationProvider extends GetConnect {
       }
       homeController.loadingStatus(false);
     } catch (e) {
-      errorMessage(e);
+      errorMessage("Terjadi kesalahan dalam memuat donasi");
     }
   }
 
@@ -89,7 +89,7 @@ class DonationProvider extends GetConnect {
       }
       homeController.loadingStatus(false);
     } catch (e) {
-      errorMessage(e);
+      errorMessage("Terjadi kesalahan ketika mengirim donasi");
     }
   }
 }
