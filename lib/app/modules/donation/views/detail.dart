@@ -133,15 +133,41 @@ class DetailView extends GetView {
                               fontSize: 14,
                             ),
                             const SizedBox(
-                              height: 24,
+                              height: 12,
                             ),
                             Row(
                               children: [
-                                CText('Iuran per warga: '),
+                                CText('Iuran yang dibayar: '),
                                 CText(
                                   CurrencyFormat.convertToIdr(
                                       int.parse(donation.donationAmount!.replaceAll('Rp. ', '')
                                                       .replaceAll('.', '')), 0),
+                                  fontSize: 18,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ],
+                            ),
+                            const SizedBox(
+                              height: 12,
+                            ),
+                            Row(
+                              children: [
+                                CText('Nomor Rekening: '),
+                                CText(
+                                  '448101018689535',
+                                  fontSize: 18,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ],
+                            ),
+                            const SizedBox(
+                              height: 12,
+                            ),
+                            Row(
+                              children: [
+                                CText('Nama Bank: '),
+                                CText(
+                                  'BRI',
                                   fontSize: 18,
                                   fontWeight: FontWeight.bold,
                                 ),

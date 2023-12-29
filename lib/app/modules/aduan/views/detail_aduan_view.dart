@@ -207,7 +207,7 @@ class DetailAduanView extends GetView {
                                 : Text('Pelapor: ' +
                                     (aduan.familyMemberName ?? ''));
                           }),
-                      Text('Notes: ' + (aduan.note ?? '-')),
+                      // Text('Notes: ' + (aduan.note ?? '-')),
                     ],
                   ),
                 ),

@@ -20,7 +20,7 @@ class AboutView extends GetView {
       body: Container(
         margin: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
         child: Column(
-          children: [Text('Ini adalah rilis pertama Aplikasi RT Kita.')],
+          children: [Text('Ini adalah rilis pertama Aplikasi RT Pintar.')],
         ),
       ),
     );

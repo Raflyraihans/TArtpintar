@@ -78,15 +78,15 @@ class PersuratanView extends GetView<PersuratanController> {
                             horizontal: 24, vertical: 12),
                         child: Column(
                           children: [
-                            TextField(
-                              decoration: InputDecoration(
-                                border: OutlineInputBorder(
-                                    borderRadius: BorderRadius.circular(10)),
-                                hintText: 'Cari Surat',
-                                prefixIcon:
-                                    const Icon(FluentIcons.search_24_regular),
-                              ),
-                            ),
+                            // TextField(
+                            //   decoration: InputDecoration(
+                            //     border: OutlineInputBorder(
+                            //         borderRadius: BorderRadius.circular(10)),
+                            //     hintText: 'Cari Surat',
+                            //     prefixIcon:
+                            //         const Icon(FluentIcons.search_24_regular),
+                            //   ),
+                            // ),
                             GetBuilder<PersuratanController>(
                                 init: PersuratanController(),
                                 initState: (state) async {

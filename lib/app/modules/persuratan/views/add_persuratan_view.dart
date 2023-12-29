@@ -60,17 +60,17 @@ class AddPersuratanView extends GetView {
                     const EdgeInsets.symmetric(horizontal: 24, vertical: 12),
                 child: Column(
                   children: [
-                    TextField(
-                      decoration: InputDecoration(
-                        border: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(10)),
-                        hintText: 'Cari Surat',
-                        prefixIcon: const Icon(FluentIcons.search_24_regular),
-                      ),
-                    ),
-                    const SizedBox(
-                      height: 12,
-                    ),
+                    // TextField(
+                    //   decoration: InputDecoration(
+                    //     border: OutlineInputBorder(
+                    //         borderRadius: BorderRadius.circular(10)),
+                    //     hintText: 'Cari Surat',
+                    //     prefixIcon: const Icon(FluentIcons.search_24_regular),
+                    //   ),
+                    // ),
+                    // const SizedBox(
+                    //   height: 12,
+                    // ),
                     Expanded(
                       child: ListView(
                         physics: BouncingScrollPhysics(),

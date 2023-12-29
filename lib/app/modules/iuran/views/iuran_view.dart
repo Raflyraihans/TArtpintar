@@ -154,6 +154,13 @@ class IuranView extends GetView<IuranController> {
                                       height: 12,
                                     ),
                                     CText(
+                                      "Nomor rekening: ",
+                                      fontSize: 14,
+                                    ),
+                                    const SizedBox(
+                                      height: 12,
+                                    ),
+                                    CText(
                                       CurrencyFormat.convertToIdr(
                                           int.parse("100000"), 0),
                                       fontSize: 18,

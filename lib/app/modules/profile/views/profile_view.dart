@@ -210,26 +210,26 @@ class ProfileView extends GetView<ProfileController> {
                           onTap: () {
                             Get.to(() => LupaPasswordView());
                           }),
-                      GetBuilder<TabDeciderController>(
-                          init: TabDeciderController(),
-                          builder: (c) {
-                            return SecondaryButton(
-                                text: 'QR Code',
-                                onTap: () {
-                                  Get.dialog(SimpleBoxDialog(
-                                    title: 'QR Code Anda',
-                                    child: Center(
-                                      child: QrImage(
-                                        data: c.user!.nik! +
-                                            '.' +
-                                            c.user!.address!,
-                                        version: QrVersions.auto,
-                                        size: 200.0,
-                                      ),
-                                    ),
-                                  ));
-                                });
-                          }),
+                      // GetBuilder<TabDeciderController>(
+                      //     init: TabDeciderController(),
+                      //     builder: (c) {
+                      //       return SecondaryButton(
+                      //           text: 'QR Code',
+                      //           onTap: () {
+                      //             Get.dialog(SimpleBoxDialog(
+                      //               title: 'QR Code Anda',
+                      //               child: Center(
+                      //                 child: QrImage(
+                      //                   data: c.user!.nik! +
+                      //                       '.' +
+                      //                       c.user!.address!,
+                      //                   version: QrVersions.auto,
+                      //                   size: 200.0,
+                      //                 ),
+                      //               ),
+                      //             ));
+                      //           });
+                      //     }),
                       ListAction(
                         text: 'Terms & Condition',
                         onTap: () {
