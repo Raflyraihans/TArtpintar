@@ -1,5 +1,5 @@
 import 'package:get/get.dart';
-import 'package:rtkita/app/data/complaint.dart';
+import 'package:rtkita/app/model/complaint.dart';
 import 'package:rtkita/app/providers/complaint.dart';
 
 class ManajemenAduanWargaController extends GetxController {

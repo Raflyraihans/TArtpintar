@@ -1,5 +1,5 @@
 import 'package:get/get.dart';
-import 'package:rtkita/app/data/polling.dart';
+import 'package:rtkita/app/model/polling.dart';
 
 class EpollingController extends GetxController {
   List<Polling?> polling = [];

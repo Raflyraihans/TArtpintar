@@ -1,5 +1,5 @@
 import 'package:get/get.dart';
-import 'package:rtkita/app/data/cover_letter.dart';
+import 'package:rtkita/app/model/cover_letter.dart';
 import 'package:rtkita/app/providers/persuratan.dart';
 
 class ManajemenPersuratanController extends GetxController {

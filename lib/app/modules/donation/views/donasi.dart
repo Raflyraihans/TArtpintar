@@ -9,7 +9,7 @@ import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:rtkita/app/components/dialog.dart';
-import 'package:rtkita/app/data/donation.dart';
+import 'package:rtkita/app/model/donation.dart';
 import 'package:rtkita/app/modules/donation/controllers/donation_controller.dart';
 import 'package:rtkita/app/providers/donation.dart';
 import 'package:rtkita/app/utils/currency_format.dart';

@@ -5,7 +5,7 @@ import 'dart:convert';
 import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
 import 'package:rtkita/app/components/dialog.dart';
-import 'package:rtkita/app/data/panic_button.dart';
+import 'package:rtkita/app/model/panic_button.dart';
 import 'package:rtkita/app/modules/peta/controllers/peta_controller.dart';
 import 'package:rtkita/env/global_var.dart';
 

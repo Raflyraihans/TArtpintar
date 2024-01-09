@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:image_picker/image_picker.dart';
-import 'package:rtkita/app/data/complaint.dart';
+import 'package:rtkita/app/model/complaint.dart';
 import 'package:rtkita/app/providers/complaint.dart';
 
 class AduanController extends GetxController {

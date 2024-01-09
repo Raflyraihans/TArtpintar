@@ -5,7 +5,7 @@ import 'dart:convert';
 import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
 import 'package:rtkita/app/components/dialog.dart';
-import 'package:rtkita/app/data/announcement.dart';
+import 'package:rtkita/app/model/announcement.dart';
 import 'package:rtkita/app/modules/home/controllers/home_controller.dart';
 import 'package:rtkita/app/modules/manajemenPengumuman/controllers/manajemen_pengumuman_controller.dart';
 import 'package:rtkita/env/global_var.dart';

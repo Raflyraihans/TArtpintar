@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
 import 'package:rtkita/app/components/dialog.dart';
-import 'package:rtkita/app/data/complaint.dart';
+import 'package:rtkita/app/model/complaint.dart';
 import 'package:rtkita/app/modules/home/controllers/home_controller.dart';
 import 'package:rtkita/app/modules/tab_decider/controllers/tab_decider_controller.dart';
 import 'package:rtkita/env/color.dart';

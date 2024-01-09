@@ -5,7 +5,7 @@ import 'dart:convert';
 import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
 import 'package:rtkita/app/components/dialog.dart';
-import 'package:rtkita/app/data/kontak.dart';
+import 'package:rtkita/app/model/kontak.dart';
 import 'package:rtkita/app/modules/home/controllers/home_controller.dart';
 import 'package:rtkita/app/modules/kontak/controllers/kontak_controller.dart';
 import 'package:rtkita/env/global_var.dart';

@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
 import 'package:rtkita/app/components/dialog.dart';
-import 'package:rtkita/app/data/polling.dart';
+import 'package:rtkita/app/model/polling.dart';
 import 'package:rtkita/app/modules/epolling/controllers/epolling_controller.dart';
 import 'package:rtkita/app/providers/polling.dart';
 import 'package:rtkita/env/color.dart';

@@ -1,4 +1,4 @@
-import 'package:rtkita/app/data/family_member.dart';
+import 'package:rtkita/app/model/family_member.dart';
 
 class Warga {
   int? id;

@@ -4,7 +4,7 @@ import 'package:flutter/services.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 import 'package:get/get.dart';
-import 'package:rtkita/app/data/cover_letter.dart';
+import 'package:rtkita/app/model/cover_letter.dart';
 import 'package:rtkita/app/providers/persuratan.dart';
 import 'package:rtkita/app/utils/string.dart';
 import 'package:rtkita/env/color.dart';

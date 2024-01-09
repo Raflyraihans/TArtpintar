@@ -2,8 +2,8 @@ import 'dart:convert';
 
 import 'package:get/get.dart';
 import 'package:rtkita/app/components/dialog.dart';
-import 'package:rtkita/app/data/family_card.dart';
-import 'package:rtkita/app/data/family_member.dart';
+import 'package:rtkita/app/model/family_card.dart';
+import 'package:rtkita/app/model/family_member.dart';
 import 'package:rtkita/app/modules/home/controllers/home_controller.dart';
 import 'package:rtkita/app/modules/register/controllers/register_controller.dart';
 import 'package:rtkita/app/modules/verif_kk/controllers/verif_kk_controller.dart';

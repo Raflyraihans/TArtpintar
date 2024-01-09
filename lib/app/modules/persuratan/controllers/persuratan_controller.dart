@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:rtkita/app/data/family_member.dart';
+import 'package:rtkita/app/model/family_member.dart';
 
-import '../../../data/cover_letter.dart';
+import '../../../model/cover_letter.dart';
 
 class PersuratanController extends GetxController {
   TextEditingController namaLengkap = TextEditingController();

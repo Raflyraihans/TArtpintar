@@ -3,7 +3,7 @@ import 'package:firebase_messaging/firebase_messaging.dart';
 // import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
-import 'package:rtkita/app/data/announcement.dart';
+import 'package:rtkita/app/model/announcement.dart';
 
 class HomeController extends GetxController {
   GetStorage box = GetStorage();

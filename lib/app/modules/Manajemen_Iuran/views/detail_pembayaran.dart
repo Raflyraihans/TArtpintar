@@ -1,7 +1,7 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:rtkita/app/data/payment.dart';
+import 'package:rtkita/app/model/payment.dart';
 import 'package:rtkita/app/modules/Manajemen_Iuran/controllers/manajemen_iuran_controller.dart';
 import 'package:rtkita/app/utils/currency_format.dart';
 import 'package:rtkita/env/color.dart';

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:image_picker/image_picker.dart';
-import 'package:rtkita/app/data/donation.dart';
+import 'package:rtkita/app/model/donation.dart';
 
 class DonationController extends GetxController {
   List<Donation> donation = [];

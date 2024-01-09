@@ -2,7 +2,7 @@ import 'dart:async';
 
 import 'package:get/get.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
-import 'package:rtkita/app/data/panic_button.dart';
+import 'package:rtkita/app/model/panic_button.dart';
 
 class PetaController extends GetxController {
   Completer<GoogleMapController> mapController = Completer();

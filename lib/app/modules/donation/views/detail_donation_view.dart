@@ -3,7 +3,7 @@ import 'package:fluentui_system_icons/fluentui_system_icons.dart';
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
-import 'package:rtkita/app/data/donation.dart';
+import 'package:rtkita/app/model/donation.dart';
 import 'package:rtkita/app/modules/donation/controllers/donation_controller.dart';
 import 'package:rtkita/app/utils/currency_format.dart';
 import 'package:rtkita/env/color.dart';

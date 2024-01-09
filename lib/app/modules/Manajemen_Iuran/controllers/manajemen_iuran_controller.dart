@@ -1,6 +1,6 @@
 import 'package:get/get.dart';
 import 'package:intl/intl.dart';
-import 'package:rtkita/app/data/payment.dart';
+import 'package:rtkita/app/model/payment.dart';
 import 'package:rtkita/app/providers/donation.dart';
 
 class ManajemenIuranController extends GetxController {
