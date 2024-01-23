@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 class ManajemenPengumumanController extends GetxController {
-  //TODO: Implement ManajemenPengumumanController
   TextEditingController title = TextEditingController();
   TextEditingController description = TextEditingController();
   final count = 0.obs;

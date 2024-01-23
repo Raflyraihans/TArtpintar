@@ -12,7 +12,7 @@ import 'package:rtkita/env/global_var.dart';
 
 class AnnouncementProvider extends GetConnect {
   GetStorage box = GetStorage();
-  void getListAnnouncement() async {
+  Future getListAnnouncement() async {
     List<Announcement> announcement = [];
 
     try {
